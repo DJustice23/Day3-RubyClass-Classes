@@ -3,9 +3,9 @@ class Fizzbuzzer
     @multiple = n #multiple will be the number used to determine what returns fizz
   end
 
-  def run(multiple)
+  def run(range)
     # need something that maps numbers 1-20 where multiples of x show FIZZ
-    ns = 1 .. multiple
+    ns = 1 .. range
     ns = ns.map do |n|
       if n % @multiple == 0
         'Fizz'
